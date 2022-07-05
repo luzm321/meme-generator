@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+main {
+  padding: 36px;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -17,14 +21,12 @@ body {
 }
 
 .header--image {
-  height: 110%;
+  height: 100%;
   margin-right: 6px;
-  border-radius: 5px;
-  mix-blend-mode: multiply;
 }
 
 .header--title {
-  font-size: 1.8rem;
+  font-size: 1.25rem;
   margin-right: auto;
 }
 
@@ -32,6 +34,30 @@ body {
   font-size: 0.75rem;
   font-weight: 500;
 }
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #437391 1.18%, #73a9b5 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 
 /* @keyframes App-logo-spin {
   from {
